@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('One') {
                 steps {
-                        echo 'Hi, this is Akash'
+                        echo “google.com\nfacebook.com” | python ssl_expiry.py
 			
 			
                 }
