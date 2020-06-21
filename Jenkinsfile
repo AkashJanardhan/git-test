@@ -9,7 +9,7 @@ stage('Read Config') {
                 script {
                     arrayURL = readFile "${env.WORKSPACE}/config.txt"
                     abc = arrayURL.split('\n')
-		    abcd = abc[0]
+		    abcd = abc[0].split(' ')
 		    echo"$abcd"	
 		
        }
