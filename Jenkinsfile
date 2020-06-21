@@ -15,6 +15,14 @@ stage('Read Config') {
        }
      }
    }
+	    stage('Read Config2') {
+            steps {
+                script {
+		    echo"$abcd"	
+		
+       }
+     }
+   }
 	    
        
 	    
