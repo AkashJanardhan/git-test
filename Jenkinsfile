@@ -7,23 +7,18 @@ pipeline {
 stage('Read Config') {
             steps {
                 script {
-                    arrayURL = readFile "${env.WORKSPACE}/config.txt"
-                    abc = arrayURL.split('\n')
-		    abcd = abc[0].split(' ')
-		    echo"$abcd"	
+                    fileContents = readFile "${env.WORKSPACE}/config.txt"
+                    fileContentsArray = fileContents.split('\n')
+		    filesToVerify = fileContentsArray[0].split(' ')
+		    secretServerURL = fileContentsArray[1]
+		    cdnBaseURL = fileContentsArray[2]
+		    sftpUser = fileContentsArray[3]
+		    credentialsId = fileContentsArray[4]
 		
        }
      }
    }
-	    stage('Read Config2') {
-            steps {
-                script {
-		    echo"$abcd"	
-		
-       }
-     }
-   }
-	    
+	      
        
 	    
 }
