@@ -1,5 +1,5 @@
 Files to verify : "catalog_macos.xml catalog_win.xml"
-https://akshit.secretservercloud.com.sg/webservices/sswebservice.asmx
-https://downloadplugins.citrix.com/AutoUpdateGovernance/
-sshacs
-cwa-autoupdate-secretserver-login
+secretServerURL : "https://akshit.secretservercloud.com.sg/webservices/sswebservice.asmx"
+cdnBaseURL : "https://downloadplugins.citrix.com/AutoUpdateGovernance/"
+sftpUser : "sshacs"
+credentialsId_cwa : "cwa-autoupdate-secretserver-login"
