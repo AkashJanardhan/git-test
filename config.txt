@@ -1,4 +1,4 @@
-catalog_macos.xml catalog_win.xml
+Files to verify : "catalog_macos.xml catalog_win.xml"
 https://akshit.secretservercloud.com.sg/webservices/sswebservice.asmx
 https://downloadplugins.citrix.com/AutoUpdateGovernance/
 sshacs
