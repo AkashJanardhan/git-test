@@ -20,7 +20,7 @@ pipeline {
 
             steps {
                 script {
-                    def props = readJSON file: '${env.WORKSPACE}/test.json'
+                    def props = readJSON file: 'test.json'
                     echo"${props.a}"
           
                     
