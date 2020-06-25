@@ -1,1 +1,1 @@
-{ "key": null, "a": "b" }
+{ "key": {"a":"bcd", "c":"def"}, "a": "b" }
