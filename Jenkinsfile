@@ -20,8 +20,10 @@ pipeline {
 
             steps {
                 script {
-                    loadProperties()
-                    echo "Later one ${properties.c[1]}"
+                    def props = readJSON file: '${env.WORKSPACE}/test.json'
+                    echo"${props.a}"
+          
+                    
                 }
             }
         }
