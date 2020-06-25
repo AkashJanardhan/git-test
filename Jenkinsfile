@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     def props = readJSON file: 'test.json'
-                    echo"${props.a}"
+                    echo"${props[0][1]}"
           
                     
                 }
