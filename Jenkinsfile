@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     loadProperties()
-                    echo "Later one ${properties.a}"
+                    echo "Later one ${properties.c}"
                 }
             }
         }
