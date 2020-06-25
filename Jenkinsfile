@@ -7,7 +7,7 @@ def loadProperties() {
         properties = new Properties()
         File propertiesFile = new File("${env.WORKSPACE}/test.properties")
         properties.load(propertiesFile.newDataInputStream())
-        echo "Immediate one ${properties.repo}"
+        echo "Immediate one ${properties.b}"
     }
 }
 
